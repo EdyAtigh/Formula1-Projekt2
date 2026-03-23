@@ -1,0 +1,14 @@
+{
+	"name": "dm_dataflow",
+	"properties": {
+		"type": "UDFLibrary",
+		"typeProperties": {
+			"sources": [],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"dm_function(integer, integer) as integer = i1-i2"
+			]
+		}
+	}
+}
