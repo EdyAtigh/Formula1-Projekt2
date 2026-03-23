@@ -1,0 +1,17 @@
+{
+	"name": "SQL usercreation",
+	"properties": {
+		"content": {
+			"query": "--CREATE LOGIN myuser WITH PASSWORD = 'StrongPassword123!';\n--CREATE USER myuser FOR LOGIN myuser;\n\n-- in \"master\" ausführen\nIF DB_ID(N'sqlpoolreprt') IS NULL\nBEGIN\n    EXEC('CREATE DATABASE sqlpoolreprt');\nEND\nGO\n\n\n-- in sqlpoolreprt ausführen\nIF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = N'DM')\nBEGIN\n    EXEC('CREATE SCHEMA DM AUTHORIZATION dbo');\nEND\nGO\n\n-- 1) External DATA SOURCE auf deinen Lake (Container-Wurzel)\nIF NOT EXISTS (SELECT 1 FROM sys.external_data_sources WHERE name = N'DS_DM')\nBEGIN\n    CREATE EXTERNAL DATA SOURCE DS_DM\n    WITH (\n        LOCATION = 'abfss://<container>@<storageaccount>.dfs.core.windows.net'\n        -- Optional: CREDENTIAL = <deine Managed Identity-Credential>, \n        -- wenn du keine Workspace-Identity oder Cross-Account-Zugriffe nutzt.\n    );\nEND\nGO\n\n-- 2) External FILE FORMAT für Parquet\nIF NOT EXISTS (SELECT 1 FROM sys.external_file_formats WHERE name = N'FF_Parquet')\nBEGIN\n    CREATE EXTERNAL FILE FORMAT FF_Parquet\n    WITH (FORMAT_TYPE = PARQUET);\nEND\nGO\n\n-- Falls vorhanden, erst löschen (so können wir Schemaänderungen sauber aktualisieren)\nIF OBJECT_ID(N'DM.Rechnungspositionen', N'U') IS NOT NULL\nBEGIN\n    DROP EXTERNAL TABLE DM.Rechnungspositionen;\nEND\nGO\n\n-- Jetzt neu erstellen – Spalten & Typen passend zu df_out\nCREATE EXTERNAL TABLE DM.Rechnungspositionen\n(\n    Artikelbezeichnung NVARCHAR(4000),\n    Einzelpreis        NVARCHAR(20),    -- z.B. '0,71' (Originalformat)\n    Menge              INT,\n    Gesamtpreis        NVARCHAR(20)\n)\nWITH (\n    LOCATION    = 'DM/ausgabe/positionen_parquet/',  -- relativ zur DATA SOURCE\n    DATA_SOURCE = DS_DM,\n    FILE_FORMAT = FF_Parquet\n);\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sqlpoolreprt",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

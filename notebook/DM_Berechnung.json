@@ -1,0 +1,1054 @@
+{
+	"name": "DM_Berechnung",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "spooldm",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "53af5134-14ad-49ae-b29d-d6abc4294bc8"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"1723a138-8a70-4d8f-a180-c6586cb8d304": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "dmBio Kokosöl, nativ, 300 ml , Bio",
+										"2": "2,76",
+										"3": "12",
+										"4": "33,12",
+										"5": "2.76",
+										"6": "33.12",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "essence Lipgloss Choco Bomb 01 Chocoholic, 10 ml",
+										"2": "1,05",
+										"3": "3",
+										"4": "3,15",
+										"5": "1.05",
+										"6": "3.15",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Pflegecreme , 250 ml",
+										"2": "0,97",
+										"3": "24",
+										"4": "23,28",
+										"5": "0.97",
+										"6": "23.28",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Cremedusche Milch & Honig, 300 ml",
+										"2": "0,46",
+										"3": "24",
+										"4": "11,04",
+										"5": "0.46",
+										"6": "11.04",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Haarmilch Feuchtigkeit, 200 ml",
+										"2": "1,30",
+										"3": "30",
+										"4": "39,00",
+										"5": "1.3",
+										"6": "39.0",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Shampoo Natural Beauty mit Avocadoöl und Mangobutter, 400 ml",
+										"2": "1,22",
+										"3": "30",
+										"4": "36,60",
+										"5": "1.22",
+										"6": "36.6",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Conditioner Natural Beauty Avocadoöl und Mangobutter, 350 ml",
+										"2": "1,22",
+										"3": "20",
+										"4": "24,40",
+										"5": "1.22",
+										"6": "24.4",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Haarmaske Natural Beauty reparierend, 300 ml",
+										"2": "2,06",
+										"3": "12",
+										"4": "24,72",
+										"5": "2.06",
+										"6": "24.72",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea PROFESSIONAL Haarkur Oil Repair Intensiv, 300 ml",
+										"2": "2,31",
+										"3": "8",
+										"4": "18,48",
+										"5": "2.31",
+										"6": "18.48",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Anti Pickel SOS-Gel Hautrein, 15 ml",
+										"2": "1,55",
+										"3": "24",
+										"4": "37,20",
+										"5": "1.55",
+										"6": "37.2",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Anti-Pickel 24h Pflege Hautrein , 50 ml",
+										"2": "1,64",
+										"3": "24",
+										"4": "39,36",
+										"5": "1.64",
+										"6": "39.36",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Reinigungsschaum hautrein, 150 ml",
+										"2": "2,48",
+										"3": "24",
+										"4": "59,52",
+										"5": "2.48",
+										"6": "59.52",
+										"7": "-0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea PROFESSIONAL Conditioner Oil Repair Intensiv, 200 ml",
+										"2": "1,13",
+										"3": "10",
+										"4": "11,30",
+										"5": "1.13",
+										"6": "11.3",
+										"7": "-0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Bodylotion Vital , 400 ml",
+										"2": "1,64",
+										"3": "20",
+										"4": "32,80",
+										"5": "1.64",
+										"6": "32.8",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Bodylotion Q10 , 400 ml",
+										"2": "1,64",
+										"3": "20",
+										"4": "32,80",
+										"5": "1.64",
+										"6": "32.8",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Bodybalsam Sensitive , 400 ml",
+										"2": "1,47",
+										"3": "20",
+										"4": "29,40",
+										"5": "1.47",
+										"6": "29.4",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Enthaarungscreme, 125 ml",
+										"2": "0,97",
+										"3": "12",
+										"4": "11,64",
+										"5": "0.97",
+										"6": "11.64",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Abschminktücher Pflegend 3in1, 25 St",
+										"2": "0,71",
+										"3": "16",
+										"4": "11,36",
+										"5": "0.71",
+										"6": "11.36",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Einwegrasierer 2-Klingen , 10 St",
+										"2": "0,97",
+										"3": "18",
+										"4": "17,46",
+										"5": "0.97",
+										"6": "17.46",
+										"7": "0.0"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "Balea Duschgel Glücksmoment, 300 ml",
+										"2": "0,46",
+										"3": "24",
+										"4": "11,04",
+										"5": "0.46",
+										"6": "11.04",
+										"7": "0.0"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Datei",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Artikelbezeichnung",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Einzelpreis",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Menge",
+										"type": "int"
+									},
+									{
+										"key": "4",
+										"name": "Gesamtpreis",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Einzelpreis_num",
+										"type": "double"
+									},
+									{
+										"key": "6",
+										"name": "Gesamtpreis_num",
+										"type": "double"
+									},
+									{
+										"key": "7",
+										"name": "Abweichung_EUR",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Fehler",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"3"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"03548a44-f2a3-46f5-9c73-b1b02c511e09": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Datei",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Artikelbezeichnung",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "Einzelpreis",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "Menge",
+										"type": "int"
+									},
+									{
+										"key": "4",
+										"name": "Gesamtpreis",
+										"type": "string"
+									},
+									{
+										"key": "5",
+										"name": "Einzelpreis_num",
+										"type": "double"
+									},
+									{
+										"key": "6",
+										"name": "Gesamtpreis_num",
+										"type": "double"
+									},
+									{
+										"key": "7",
+										"name": "Abweichung_EUR",
+										"type": "double"
+									},
+									{
+										"key": "8",
+										"name": "Fehler",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"errors_df"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"3"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"03495e5c-7da2-4e28-9d6c-b1acc1efb35a": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88347614.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88348806.PDF",
+										"1": "1097.68",
+										"2": "71"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372817.PDF",
+										"1": "2237.03",
+										"2": "100"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372846.PDF",
+										"1": "617.37",
+										"2": "35"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372863.PDF",
+										"1": "510.33",
+										"2": "22"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372876.PDF",
+										"1": "381.9",
+										"2": "18"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372891.PDF",
+										"1": "303.6",
+										"2": "13"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372902.PDF",
+										"1": "289.92",
+										"2": "12"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372913.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88372925.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88375605.PDF",
+										"1": "88.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88375691.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88385971.PDF",
+										"1": "303.6",
+										"2": "13"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88385984.PDF",
+										"1": "289.92",
+										"2": "12"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88385997.PDF",
+										"1": "274.56",
+										"2": "12"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88386443.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88386456.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88386466.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88386477.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388394.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388403.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388415.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388421.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388435.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388449.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388462.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88388475.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88390606.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88391971.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88391982.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88392007.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88396231.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88398504.PDF",
+										"1": "84.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88408203.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88410201.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88410210.PDF",
+										"1": "156.88",
+										"2": "9"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88410226.PDF",
+										"1": "76.9",
+										"2": "5"
+									},
+									{
+										"0": "abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88410888.PDF",
+										"1": "156.88",
+										"2": "9"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "Datei",
+										"type": "string"
+									},
+									{
+										"key": "1",
+										"name": "Summe_Gesamtpreis_EUR",
+										"type": "double"
+									},
+									{
+										"key": "2",
+										"name": "Anzahl_Positionen",
+										"type": "bigint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"summen_df"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/e0ba0fbe-cd40-4a41-bc55-8f9c8a243cf4/resourceGroups/ZREPORTING_DM_Ressourcengrp/providers/Microsoft.Synapse/workspaces/zarbeitsbereichdmreporting/bigDataPools/spooldm",
+				"name": "spooldm",
+				"type": "Spark",
+				"endpoint": "https://zarbeitsbereichdmreporting.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/spooldm",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.5",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"import re\n",
+					"import pandas as pd\n",
+					"from PyPDF2 import PdfReader\n",
+					"\n",
+					"# === Einstellungen ===\n",
+					"pdf_path = \"abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88347614.PDF\"\n",
+					"TABLE_HEADER = \"Artikelbezeichnung Einzelpreis Menge Gesamtpreis\"\n",
+					"END_MARKERS = [\n",
+					"    \"Summe Artikel\",\n",
+					"    \"Die Rechnung wurde mit Kreditkarte bezahlt\",\n",
+					"    \"Rechnung Seite\"\n",
+					"]\n",
+					"\n",
+					"# === 1) PDF-Text extrahieren & normalisieren ===\n",
+					"reader = PdfReader(pdf_path)\n",
+					"all_text = \" \".join((page.extract_text() or \"\") for page in reader.pages)\n",
+					"text = re.sub(r\"\\s+\", \" \", all_text)          # alle Whitespaces vereinheitlichen\n",
+					"text = text.replace(\"**\", \" \")                # Artefakte entfernen\n",
+					"\n",
+					"# === 2) In Tabellen-Sektionen aufteilen ===\n",
+					"sections = text.split(TABLE_HEADER)\n",
+					"\n",
+					"# Regex:  [Artikel] [Einzelpreis €] [Menge] [Gesamtpreis €]\n",
+					"pattern = re.compile(\n",
+					"    r\"(?P<Artikelbezeichnung>.+?)\"            # Artikelname (non-greedy)\n",
+					"    r\"(?P<Einzelpreis>\\d{1,3},\\d{2})\\s*€\\s*\"  # 0,71 €\n",
+					"    r\"(?P<Menge>\\d{1,5})\\s+\"                  # Stückzahl\n",
+					"    r\"(?P<Gesamtpreis>\\d{1,3},\\d{2})\\s*€\"     # 21,30 €\n",
+					")\n",
+					"\n",
+					"rows = []\n",
+					"for part in sections[1:]:  # alles vor der ersten Tabelle überspringen\n",
+					"    # Am ersten vorkommenden Endmarker schneiden (z. B. \"Summe Artikel\")\n",
+					"    end_idx = min([part.find(m) for m in END_MARKERS if m in part] + [len(part)])\n",
+					"    chunk = part[:end_idx]\n",
+					"\n",
+					"    for m in pattern.finditer(chunk):\n",
+					"        name = re.sub(r\"\\s+\", \" \", m[\"Artikelbezeichnung\"]).strip()\n",
+					"        rows.append({\n",
+					"            \"Artikelbezeichnung\": name,\n",
+					"            \"Einzelpreis\": m[\"Einzelpreis\"],\n",
+					"            \"Menge\": int(m[\"Menge\"]),\n",
+					"            \"Gesamtpreis\": m[\"Gesamtpreis\"],\n",
+					"        })\n",
+					"\n",
+					"# === 3) DataFrame ===\n",
+					"df = pd.DataFrame(rows)\n",
+					"\n",
+					"# === Optional: numerische Hilfsspalten ===\n",
+					"if not df.empty:\n",
+					"    df[\"Einzelpreis_num\"] = (\n",
+					"        df[\"Einzelpreis\"]\n",
+					"        .str.replace(\".\", \"\", regex=False)\n",
+					"        .str.replace(\",\", \".\", regex=False)\n",
+					"        .astype(float)\n",
+					"    )\n",
+					"    df[\"Gesamtpreis_num\"] = (\n",
+					"        df[\"Gesamtpreis\"]\n",
+					"        .str.replace(\".\", \"\", regex=False)\n",
+					"        .str.replace(\",\", \".\", regex=False)\n",
+					"        .astype(float)\n",
+					"    )\n",
+					"    df[\"Abweichung_(€)\"] = (df[\"Einzelpreis_num\"] * df[\"Menge\"] - df[\"Gesamtpreis_num\"]).round(2)\n",
+					"\n",
+					"# === Ausgabe speichern ===\n",
+					"df.to_csv(\"rechnung_positionen.csv\", index=False, encoding=\"utf-8\")\n",
+					"df.head()"
+				],
+				"execution_count": 10
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"\n",
+					"from notebookutils import mssparkutils\n",
+					"\n",
+					"base = \"abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/\"\n",
+					"print(\"Ordner:\", base)\n",
+					"for f in mssparkutils.fs.ls(base):\n",
+					"    print(\" -\", f.path)\n",
+					""
+				],
+				"execution_count": 7
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"\n",
+					"from notebookutils import mssparkutils\n",
+					"\n",
+					"base = \"abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/\"\n",
+					"target_nummer = \"88347614\"  # <- nur die Rechnungsnummer anpassen\n",
+					"\n",
+					"kandidaten = [f.path for f in mssparkutils.fs.ls(base)]\n",
+					"# Kandidaten mit dieser Rechnungsnummer (case-insensitive) filtern:\n",
+					"hits = [p for p in kandidaten if target_nummer.lower() in p.lower() and p.lower().endswith(\".pdf\")]\n",
+					"\n",
+					"if not hits:\n",
+					"    raise FileNotFoundError(f\"Keine PDF mit Nummer {target_nummer} unter {base} gefunden.\")\n",
+					"pdf_path = sorted(hits)[-1]   # falls mehrere, nimm die letzte\n",
+					"print(\"Gefundener Pfad:\", pdf_path)\n",
+					""
+				],
+				"execution_count": 8
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"import re\n",
+					"import pandas as pd\n",
+					"from io import BytesIO\n",
+					"from PyPDF2 import PdfReader\n",
+					"\n",
+					"# pdf_path kommt aus Schritt 2\n",
+					"print(\"Lese:\", pdf_path)\n",
+					"\n",
+					"# 1) Datei aus ADLS als Bytes laden\n",
+					"pdf_bytes = (\n",
+					"    spark.read.format(\"binaryFile\")\n",
+					"         .load(pdf_path)\n",
+					"         .selectExpr(\"content\")\n",
+					"         .collect()[0][0]\n",
+					")\n",
+					"\n",
+					"# 2) Text extrahieren\n",
+					"reader = PdfReader(BytesIO(pdf_bytes))\n",
+					"all_text = \" \".join((page.extract_text() or \"\") for page in reader.pages)\n",
+					"text = re.sub(r\"\\s+\", \" \", all_text).replace(\"**\", \" \")\n",
+					"\n",
+					"# 3) Tabellenbereich schneiden & Spalten extrahieren\n",
+					"TABLE_HEADER = \"Artikelbezeichnung Einzelpreis Menge Gesamtpreis\"\n",
+					"END_MARKERS = [\"Summe Artikel\", \"Die Rechnung wurde mit Kreditkarte bezahlt\", \"Rechnung Seite\"]\n",
+					"sections = text.split(TABLE_HEADER)\n",
+					"\n",
+					"pattern = re.compile(\n",
+					"    r\"(?P<Artikelbezeichnung>.+?)\"\n",
+					"    r\"(?P<Einzelpreis>\\d{1,3},\\d{2})\\s*€\\s*\"\n",
+					"    r\"(?P<Menge>\\d{1,5})\\s+\"\n",
+					"    r\"(?P<Gesamtpreis>\\d{1,3},\\d{2})\\s*€\"\n",
+					")\n",
+					"\n",
+					"rows = []\n",
+					"for part in sections[1:]:\n",
+					"    end_idx = min([part.find(m) for m in END_MARKERS if m in part] + [len(part)])\n",
+					"    chunk = part[:end_idx]\n",
+					"    for m in pattern.finditer(chunk):\n",
+					"        name = re.sub(r\"\\s+\", \" \", m[\"Artikelbezeichnung\"]).strip()\n",
+					"        rows.append({\n",
+					"            \"Artikelbezeichnung\": name,\n",
+					"            \"Einzelpreis\": m[\"Einzelpreis\"],\n",
+					"            \"Menge\": int(m[\"Menge\"]),\n",
+					"            \"Gesamtpreis\": m[\"Gesamtpreis\"],\n",
+					"        })\n",
+					"\n",
+					"df = pd.DataFrame(rows)\n",
+					"df"
+				],
+				"execution_count": 9
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"\n",
+					"from notebookutils import mssparkutils\n",
+					"\n",
+					"base_path = \"abfss://dateinamesysreporting@strjaccreporting.dfs.core.windows.net/DM/Rechnung dm Nr. 88347614.PDF\"\n",
+					"for f in mssparkutils.fs.ls(base_path):\n",
+					"    print(f.path)\n",
+					"\n",
+					"reader = PdfReader(base_path)"
+				],
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"print(1+2)"
+				],
+				"execution_count": 2
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"#%pip install PyPDF2 pandas\n",
+					"# --- Konfiguration ---\n",
+					"container = \"dateinamesysreporting\"\n",
+					"account   = \"strjaccreporting\"\n",
+					"dir_path  = f\"abfss://{container}@{account}.dfs.core.windows.net/DM/\"\n",
+					"\n",
+					"print(\"Eingangsordner:\", dir_path)\n",
+					"\n",
+					"# --- Spark DataFrame mit allen PDFs bauen (parallel) ---\n",
+					"bin_df = (\n",
+					"    spark.read.format(\"binaryFile\")\n",
+					"         .load(dir_path + \"*.PDF\")   # alle PDFs im Ordner DM\n",
+					"         .select(\"path\", \"content\")  # path=Dateipfad, content=Bytes\n",
+					")\n",
+					"bin_df.count()"
+				],
+				"execution_count": 12
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"import re\n",
+					"import pandas as pd\n",
+					"from io import BytesIO\n",
+					"from typing import Iterator\n",
+					"\n",
+					"from PyPDF2 import PdfReader\n",
+					"from pyspark.sql.types import (\n",
+					"    StructType, StructField, StringType, IntegerType, DoubleType\n",
+					")\n",
+					"\n",
+					"TABLE_HEADER = \"Artikelbezeichnung Einzelpreis Menge Gesamtpreis\"\n",
+					"END_MARKERS  = [\"Summe Artikel\", \"Die Rechnung wurde mit Kreditkarte bezahlt\", \"Rechnung Seite\"]\n",
+					"\n",
+					"# Zielschema (Spark) für die extrahierten Zeilen\n",
+					"schema = StructType([\n",
+					"    StructField(\"Datei\",              StringType(),  True),\n",
+					"    StructField(\"Artikelbezeichnung\", StringType(),  True),\n",
+					"    StructField(\"Einzelpreis\",        StringType(),  True),\n",
+					"    StructField(\"Menge\",              IntegerType(), True),\n",
+					"    StructField(\"Gesamtpreis\",        StringType(),  True),\n",
+					"    StructField(\"Einzelpreis_num\",    DoubleType(),  True),\n",
+					"    StructField(\"Gesamtpreis_num\",    DoubleType(),  True),\n",
+					"    StructField(\"Abweichung_EUR\",     DoubleType(),  True),\n",
+					"    StructField(\"Fehler\",             StringType(),  True),\n",
+					"])\n",
+					"\n",
+					"# Regex für die vier Spalten\n",
+					"row_pattern = re.compile(\n",
+					"    r\"(?P<Artikelbezeichnung>.+?)\"\n",
+					"    r\"(?P<Einzelpreis>\\d{1,3},\\d{2})\\s*€\\s*\"\n",
+					"    r\"(?P<Menge>\\d{1,5})\\s+\"\n",
+					"    r\"(?P<Gesamtpreis>\\d{1,3},\\d{2})\\s*€\"\n",
+					")\n",
+					"\n",
+					"def parse_text_to_rows(text: str):\n",
+					"    \"\"\"Schneidet den Tabellenbereich und gibt eine Liste von Dicts (Zeilen) zurück.\"\"\"\n",
+					"    rows = []\n",
+					"    sections = text.split(TABLE_HEADER)\n",
+					"    for part in sections[1:]:\n",
+					"        end_idx = min([part.find(m) for m in END_MARKERS if m in part] + [len(part)])\n",
+					"        chunk = part[:end_idx]\n",
+					"        for m in row_pattern.finditer(chunk):\n",
+					"            name = re.sub(r\"\\s+\", \" \", m[\"Artikelbezeichnung\"]).strip()\n",
+					"            einheit = m[\"Einzelpreis\"]\n",
+					"            menge   = int(m[\"Menge\"])\n",
+					"            gesamt  = m[\"Gesamtpreis\"]\n",
+					"            # numerische Hilfsspalten (de -> en Dezimalpunkt)\n",
+					"            ep = float(einheit.replace(\".\", \"\").replace(\",\", \".\"))\n",
+					"            gp = float(gesamt.replace(\".\", \"\").replace(\",\", \".\"))\n",
+					"            abw = round(ep * menge - gp, 2)\n",
+					"            rows.append({\n",
+					"                \"Artikelbezeichnung\": name,\n",
+					"                \"Einzelpreis\": einheit,\n",
+					"                \"Menge\": menge,\n",
+					"                \"Gesamtpreis\": gesamt,\n",
+					"                \"Einzelpreis_num\": ep,\n",
+					"                \"Gesamtpreis_num\": gp,\n",
+					"                \"Abweichung_EUR\": abw,\n",
+					"            })\n",
+					"    return rows\n",
+					"\n",
+					"def extract_rows_map(pdf_iter: Iterator[pd.DataFrame]) -> Iterator[pd.DataFrame]:\n",
+					"    \"\"\"mapInPandas-Funktion: erhält Batches mit Spalten (path, content).\"\"\"\n",
+					"    for pdf_batch in pdf_iter:\n",
+					"        out = []\n",
+					"        for path, content in zip(pdf_batch[\"path\"], pdf_batch[\"content\"]):\n",
+					"            try:\n",
+					"                reader = PdfReader(BytesIO(content))\n",
+					"                all_text = \" \".join((page.extract_text() or \"\") for page in reader.pages)\n",
+					"                text = re.sub(r\"\\s+\", \" \", all_text).replace(\"**\", \" \")\n",
+					"                rows = parse_text_to_rows(text)\n",
+					"                if rows:\n",
+					"                    for r in rows:\n",
+					"                        r[\"Datei\"] = path\n",
+					"                        r[\"Fehler\"] = None\n",
+					"                        out.append(r)\n",
+					"                else:\n",
+					"                    # Keine Zeilen gefunden -> als \"Fehler\" markieren\n",
+					"                    out.append({\n",
+					"                        \"Datei\": path, \"Artikelbezeichnung\": None, \"Einzelpreis\": None,\n",
+					"                        \"Menge\": None, \"Gesamtpreis\": None,\n",
+					"                        \"Einzelpreis_num\": None, \"Gesamtpreis_num\": None,\n",
+					"                        \"Abweichung_EUR\": None,\n",
+					"                        \"Fehler\": \"Keine Positionen erkannt (prüfe Header/Format/OCR)\"\n",
+					"                    })\n",
+					"            except Exception as e:\n",
+					"                out.append({\n",
+					"                    \"Datei\": path, \"Artikelbezeichnung\": None, \"Einzelpreis\": None,\n",
+					"                    \"Menge\": None, \"Gesamtpreis\": None,\n",
+					"                    \"Einzelpreis_num\": None, \"Gesamtpreis_num\": None,\n",
+					"                    \"Abweichung_EUR\": None,\n",
+					"                    \"Fehler\": f\"Parser-Fehler: {str(e)[:180]}\"\n",
+					"                })\n",
+					"        yield pd.DataFrame(out)\n",
+					"\n",
+					"# mapInPandas anwenden (parallel)\n",
+					"result_df = bin_df.mapInPandas(extract_rows_map, schema=schema).cache()\n",
+					"\n",
+					"print(\"Anzahl extrahierter Zeilen:\", result_df.count())\n",
+					"display(result_df.limit(20))"
+				],
+				"execution_count": 13
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"import pyspark.sql.functions as F\n",
+					"\n",
+					"# a) Zeilen mit Fehlern ansehen\n",
+					"errors_df = result_df.filter(F.col(\"Fehler\").isNotNull())\n",
+					"display(errors_df)\n",
+					"\n",
+					"# b) Summen je Datei (zur Plausibilisierung)\n",
+					"summen_df = (\n",
+					"    result_df.filter(F.col(\"Fehler\").isNull())\n",
+					"             .groupBy(\"Datei\")\n",
+					"             .agg(F.round(F.sum(\"Gesamtpreis_num\"), 2).alias(\"Summe_Gesamtpreis_EUR\"),\n",
+					"                  F.count(\"*\").alias(\"Anzahl_Positionen\"))\n",
+					"             .orderBy(\"Datei\")\n",
+					")\n",
+					"display(summen_df)"
+				],
+				"execution_count": 14
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"out_csv_dir = dir_path + \"ausgabe/positionen_csv/\"\n",
+					"(result_df\n",
+					"    .select(\"Datei\",\"Artikelbezeichnung\",\"Einzelpreis\",\"Menge\",\"Gesamtpreis\")\n",
+					"    .coalesce(1)\n",
+					"    .write.mode(\"overwrite\")\n",
+					"    .option(\"header\", True)\n",
+					"    .csv(out_csv_dir)\n",
+					")\n",
+					"print(\"CSV geschrieben nach:\", out_csv_dir)"
+				],
+				"execution_count": 15
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"out_delta_dir = dir_path + \"ausgabe/positionen_delta/\"\n",
+					"(result_df\n",
+					"    .write\n",
+					"    .format(\"delta\")\n",
+					"    .mode(\"overwrite\")\n",
+					"    .save(out_delta_dir)\n",
+					")\n",
+					"\n",
+					"# Optional im Metastore registrieren, dann per SQL abfragbar:\n",
+					"spark.sql(\"DROP TABLE IF EXISTS dm_rechnungen_positionen\")\n",
+					"spark.sql(f\"CREATE TABLE dm_rechnungen_positionen USING DELTA LOCATION '{out_delta_dir}'\")"
+				],
+				"execution_count": 16
+			},
+			{
+				"cell_type": "code",
+				"source": [
+					"import pyspark.sql.functions as F\n",
+					"\n",
+					"# 👉 Pfad in deinen Lake (ADLS Gen2)\n",
+					"container = \"<container>\"        # z.B. dateinamesysreporting\n",
+					"account   = \"<storageaccount>\"   # z.B. strjaccreporting\n",
+					"base_dir  = f\"abfss://{container}@{account}.dfs.core.windows.net/DM/\"\n",
+					"\n",
+					"# Unterordner für Parquet-Ausgabe\n",
+					"parquet_dir = base_dir + \"ausgabe/positionen_parquet/\"\n",
+					"\n",
+					"# Falls dein DataFrame noch zusätzliche Spalten enthält:\n",
+					"df_out = (result_df\n",
+					"          .filter(F.col(\"Artikelbezeichnung\").isNotNull())\n",
+					"          .select(\"Artikelbezeichnung\",\"Einzelpreis\",\"Menge\",\"Gesamtpreis\"))\n",
+					"\n",
+					"# Als Parquet (spaltig, typisiert) schreiben – ideal für Serverless\n",
+					"(df_out\n",
+					"    .write\n",
+					"    .mode(\"overwrite\")\n",
+					"    .parquet(parquet_dir)\n",
+					")\n",
+					"\n",
+					"print(\"Parquet geschrieben nach:\", parquet_dir)\n",
+					"df_out.limit(10).show(truncate=False)"
+				],
+				"execution_count": 18
+			}
+		]
+	}
+}

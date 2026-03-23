@@ -1,0 +1,17 @@
+{
+	"name": "SQL usercreation_Copy1_Copy1",
+	"properties": {
+		"content": {
+			"query": "-- a) Ordnerlistung/Lesetest via OPENROWSET (alternativ zur External Table)\nSELECT TOP 10 *\nFROM OPENROWSET(\n    BULK 'https://<storageaccount>.dfs.core.windows.net/<container>/DM/ausgabe/positionen_parquet/',\n    FORMAT = 'PARQUET'\n) AS rows;\nGO\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sqlpoolreprt",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

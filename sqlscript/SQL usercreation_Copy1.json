@@ -1,0 +1,17 @@
+{
+	"name": "SQL usercreation_Copy1",
+	"properties": {
+		"content": {
+			"query": "\n--SELECT TOP 20 *\n--FROM DM.Rechnungspositionen\n--ORDER BY Artikelbezeichnung;\n\n-- (A) Schema DM anlegen, falls es fehlt\nIF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = N'DM')\nBEGIN\n    EXEC('CREATE SCHEMA DM AUTHORIZATION dbo');\nEND\nGO\n\n-- (B) Master Key anlegen, falls noch keiner existiert (einmalig pro DB)\n-- Notwendig, wenn du künftig auch SAS/Secrets speichern willst.\nIF NOT EXISTS (SELECT * FROM sys.symmetric_keys WHERE name = '##MS_DatabaseMasterKey##')\nBEGIN\n    CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'EinSicheresPasswort!123';\nEND\nGO\n\n-- (C) DATABASE SCOPED CREDENTIAL für die Managed Identity des Synapse-Workspaces\n-- (Kein Secret nötig – es referenziert die Workspace-MI)\nIF NOT EXISTS (SELECT 1 FROM sys.database_scoped_credentials WHERE name = N'WorkspaceIdentity')\nBEGIN\n    CREATE DATABASE SCOPED CREDENTIAL WorkspaceIdentity\n    WITH IDENTITY = 'Managed Identity';\nEND\nGO\n\n-- (D) External Data Source auf ADLS Gen2 (dfs‑Endpoint!) mit MI‑Credential\nIF NOT EXISTS (SELECT 1 FROM sys.external_data_sources WHERE name = N'DS_DM')\nBEGIN\n    CREATE EXTERNAL DATA SOURCE DS_DM\n    WITH (\n        LOCATION   = 'https://<storageaccount>.dfs.core.windows.net/<container>',\n        CREDENTIAL = WorkspaceIdentity\n    );\nEND\nGO\n\n-- (E) Parquet File Format (einmalig)\nIF NOT EXISTS (SELECT 1 FROM sys.external_file_formats WHERE name = N'FF_Parquet')\nBEGIN\n    CREATE EXTERNAL FILE FORMAT FF_Parquet\n    WITH ( FORMAT_TYPE = PARQUET );\nEND\nGO\n\n-- (F) External Table neu auf den Ausgabeordner zeigen lassen\n-- WICHTIG: LOCATION ist relativ zur DATA SOURCE und zeigt auf den Ordner,\n-- den du mit Spark in Schritt 1 geschrieben hast (ohne leading slash).\nIF OBJECT_ID(N'DM.Rechnungspositionen', N'U') IS NOT NULL\n    DROP EXTERNAL TABLE DM.Rechnungspositionen;\nGO\n\nCREATE EXTERNAL TABLE DM.Rechnungspositionen\n(\n    Artikelbezeichnung NVARCHAR(4000),\n    Einzelpreis        NVARCHAR(20),\n    Menge              INT,\n    Gesamtpreis        NVARCHAR(20)\n)\nWITH (\n    DATA_SOURCE = DS_DM,\n    FILE_FORMAT = FF_Parquet,\n    LOCATION    = 'DM/ausgabe/positionen_parquet/'   -- <== anpassen, muss existieren\n);\nGO\n\n-- a) Ordnerlistung/Lesetest via OPENROWSET (alternativ zur External Table)\nSELECT TOP 10 *\nFROM OPENROWSET(\n    BULK 'https://<storageaccount>.dfs.core.windows.net/<container>/DM/ausgabe/positionen_parquet/',\n    FORMAT = 'PARQUET'\n) AS rows;\nGO\n\n-- b) Jetzt die External Table testen\nSELECT TOP 10 * FROM DM.Rechnungspositionen;\nGO\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "sqlpoolreprt",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
